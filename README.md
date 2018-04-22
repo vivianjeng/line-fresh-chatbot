@@ -37,7 +37,7 @@ $ git clone https://github.com/vivianjeng/line-fresh-chatbot
 ## 使用 Heroku CLI
 
 1. 下載並安裝 [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)、[Git](https://git-scm.com/)
-2. 開啟範例程式碼資料夾，在路徑上輸入 cmd
+2. 開啟程式碼資料夾，在路徑上輸入 cmd
 3. 使用終端或命令行應用程序登錄到 Heroku
 ```shell＝
 heroku login
