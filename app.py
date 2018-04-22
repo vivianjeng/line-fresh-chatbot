@@ -1,4 +1,3 @@
-import os
 from flask import Flask, request, abort
 
 from linebot import (
@@ -22,11 +21,11 @@ from linebot.models import (
 app = Flask(__name__)
 
 # Channel Access Token
-line_bot_api = LineBotApi('TJpkyAGnxyWf7eFcAL7+egcX1VroELC04ikPM3hOU7txBqQhbx/gZGSRRh8zBwCcPnt6xW29ayvek4y4c/tf/aolwFB6qaw0hLGrU/keBNZOCHkuPahVEmxsEKy/GENEg1Jfgag5qqNcdV0ChpeMhgdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('{CHANNEL ACCESS TOKEN}')
 # Channel Secret
-handler = WebhookHandler('3095660aba36a6922da86ea27d46e27e')
+handler = WebhookHandler('{CHANNEL SECRET}')
 # Heroku App Name
-appName = 'linepythonbot'
+appName = {HEROKU APP NAME}
 
 # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
