@@ -25,7 +25,7 @@ line_bot_api = LineBotApi('{CHANNEL ACCESS TOKEN}')
 # Channel Secret
 handler = WebhookHandler('{CHANNEL SECRET}')
 # Heroku App Name
-appName = {HEROKU APP NAME}
+appName = '{HEROKU APP NAME}'
 
 # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
