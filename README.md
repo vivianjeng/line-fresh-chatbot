@@ -1,45 +1,38 @@
-# Line Bot 教學
+# Line Bot 安裝
 
-本教程介紹如何使用 Python LINE Bot SDK 在 Heroku 上架設一個簡單的學舌鳥機器人。
+使用 Python LINE Bot SDK 在 Heroku 上架設一個chatbot。
 
-如果您想以另一種語言架設範例 bot，請參閱以下  LINE Bot SDK repositories。
-- [PHP](https://github.com/line/line-bot-sdk-php)
-- [Go](https://github.com/line/line-bot-sdk-go)
-- [Perl](https://github.com/line/line-bot-sdk-perl)
-- [Ruby](https://github.com/line/line-bot-sdk-ruby)
-- [Python](https://github.com/line/line-bot-sdk-python)
-- [Node.js](https://github.com/line/line-bot-sdk-nodejs)
+## 在開始之前
 
-## 在你開始之前
+確保具有以下內容：
 
-確保您具有以下內容：
+- 在 Line 的控制台為機器人創建了一個頻道 [#教學](https://developers.line.me/en/docs/messaging-api/getting-started/)
+- 一個 [Heroku](https://www.heroku.com) 的帳戶（可以免費創建一個）
 
-- 在 Line 的控制台為您的機器人創建了一個頻道 [#教學](https://developers.line.me/en/docs/messaging-api/getting-started/)
-- 一個 [Heroku](https://www.heroku.com) 的帳戶（您可以免費創建一個）
+## 架設聊天機器人
 
-## 架設範例機器人
-
-按照以下步驟架設一個學舌鳥機器人。
+按照以下步驟架設機器人。
 
 
 1. 登入 Heroku 後，
   在 [Heroku](https://dashboard.heroku.com/apps) 頁面中，點選 New -> Create New App
-  ![](https://i.imgur.com/Y3njp7I.png)
-2. 輸入自己喜歡的 App name ，然後點擊 Create app
-  ![](https://i.imgur.com/WJ85jXR.png)
-3. 下載 [範例程式碼](https://github.com/yaoandy107/line-bot-tutorial/archive/master.zip)
-4. 進入 [Line 控制台](https://developers.line.me/console/)，選擇你剛剛創建的機器人
-  ![](https://i.imgur.com/n3bQym2.png)
-5. 取得 **channel secret** 和 **channel access token**，如果沒有內容，請點 Issue
-  ![](https://i.imgur.com/entIggx.png)
-6. 使用編輯器開啟範例程式碼資料夾內的 app.py，填入 **channel secret** 和 **channel access token**
-  ![](https://i.imgur.com/Uz16joi.png)
+  ![](https://i.imgur.com/MVrkUsn.png)
+2. 輸入 App name ，然後點擊 Create app
+  ![](https://i.imgur.com/k5Cn8SZ.png)
+3. 下載此repository
+``` shell=
+$ git clone https://github.com/vivianjeng/line-fresh-chatbot
+```
+4. 進入 [Line 控制台](https://developers.line.me/console/)，[創建一個chatbot](https://developers.line.me/en/docs/messaging-api/getting-started/)
+5. 取得 **channel secret** 和 **channel access token**，看[教學](https://developers.line.me/en/docs/messaging-api/building-sample-bot-with-heroku/)
+6. 開啟資料夾內的 app.py，修改 **channel secret** 、 **channel access token** 和 **heroku app name**
+  ![](https://i.imgur.com/Qj9r1nU.png)
 7. 並使用 Heroku CLI 將程式部署到 Heroku 上面 （請參考 [使用 Heroku CLI](#使用-heroku-cli)）
 8. 使用以下 URL 格式在控制台中輸入 webhook URL 
   `{HEROKU_APP_NAME}.herokuapp.com/callback`
   注意：{HEROKU_APP_NAME} 是步驟2中的應用程序名稱
 9. 通過在控制台的 “Channel settings” 頁面上掃描 QR Code，將您的機器人添加到 LINE 的朋友中
-10. 在 Line 上向您的機器人發送文字訊息，並確認它使用相同的訊息進行回應
+10. 即可在 Line 上向您的機器人發送文字訊息
 
 ## 使用 Heroku CLI
 
