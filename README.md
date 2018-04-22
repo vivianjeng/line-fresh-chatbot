@@ -95,6 +95,6 @@ heroku logs --tail --app {HEROKU_APP_NAME}
 如想更多了解此程式，可以去研究 
 Python3、
 [Flask 套件](http://docs.jinkan.org/docs/flask/)、
-[Line bot sdk](https://github.com/line/line-bot-sdk-python)
+[Line bot sdk](https://github.com/line/line-bot-sdk-python)、
 [官方文件](https://github.com/line/line-bot-sdk-python#api)
 
