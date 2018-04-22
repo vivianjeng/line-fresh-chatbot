@@ -1,15 +1,26 @@
-# Line Bot 安裝
+# 2018 LINE TECH FRECH Program-Pretest 
+# (鄭雅文 Jeng,Ya-wen)
+
+## 加入Line Bot好友
+
+#### 掃描QR code
+![](https://i.imgur.com/6qIsCCX.png)
+
+#### 使用line ID
+ID: @izb1620s
+
+## Line Bot 安裝
 
 使用 Python LINE Bot SDK 在 Heroku 上架設一個chatbot。
 
-## 在開始之前
+### 在開始之前
 
 確保具有以下內容：
 
 - 在 Line 的控制台為機器人創建了一個頻道 [#教學](https://developers.line.me/en/docs/messaging-api/getting-started/)
 - 一個 [Heroku](https://www.heroku.com) 的帳戶（可以免費創建一個）
 
-## 架設聊天機器人
+### 架設聊天機器人
 
 按照以下步驟架設機器人。
 
@@ -34,7 +45,7 @@ $ git clone https://github.com/vivianjeng/line-fresh-chatbot
 9. 通過在控制台的 “Channel settings” 頁面上掃描 QR Code，將您的機器人添加到 LINE 的朋友中
 10. 即可在 Line 上向您的機器人發送文字訊息
 
-## 使用 Heroku CLI
+### 使用 Heroku CLI
 
 1. 下載並安裝 [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)、[Git](https://git-scm.com/)
 2. 開啟程式碼資料夾，在路徑上輸入 cmd
@@ -63,7 +74,7 @@ git push heroku master
 **每當需要更新 Bot 時，請重新執行 5、6、7 步驟**
 
 
-## 檢查log
+### 檢查log
 ```
 當成是遇到問題時，可查看log以找出錯誤
 ```
@@ -83,16 +94,15 @@ heroku logs --tail --app {HEROKU_APP_NAME}
     --tail    # 持續打印日誌
     --app {HEROKU_APP_NAME}    # 指定 App
 
-## 程式解說
+### 程式解說
 ```
 資料夾裡需含有兩份文件來讓你的程式能在 heroku 上運行
 ```
 - Procfile：heroku 執行命令，web: {語言} {檔案}，這邊語言為 python，要自動執行的檔案為 app.py，因此我們改成 **web: python3 app.py**。
 - requirements.txt：列出所有用到的套件，heroku 會依據這份文件來安裝需要套件
 
-### app.py
+#### 使用套件
 
-如想更多了解此程式，可以去研究 
 Python3、
 [Flask 套件](http://docs.jinkan.org/docs/flask/)、
 [Line bot sdk](https://github.com/line/line-bot-sdk-python)、
