@@ -26,7 +26,7 @@ $ git clone https://github.com/vivianjeng/line-fresh-chatbot
 4. 進入 [Line 控制台](https://developers.line.me/console/)，[創建一個chatbot](https://developers.line.me/en/docs/messaging-api/getting-started/)
 5. 取得 **channel secret** 和 **channel access token**，看[教學](https://developers.line.me/en/docs/messaging-api/building-sample-bot-with-heroku/)
 6. 開啟資料夾內的 app.py，修改 **channel secret** 、 **channel access token** 和 **heroku app name**
-  ![](https://i.imgur.com/Qj9r1nU.png)
+  ![](https://i.imgur.com/7eJJNqO.png)
 7. 並使用 Heroku CLI 將程式部署到 Heroku 上面 （請參考 [使用 Heroku CLI](#使用-heroku-cli)）
 8. 使用以下 URL 格式在控制台中輸入 webhook URL 
   `{HEROKU_APP_NAME}.herokuapp.com/callback`
