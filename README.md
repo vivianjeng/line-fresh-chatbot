@@ -1,5 +1,4 @@
 # 2018 LINE TECH FRECH Program-Pretest 
-# (鄭雅文 Jeng,Ya-wen)
 
 ## 加入Line Bot好友
 
